@@ -11,8 +11,8 @@ body{
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 50%;
+  width: 70%;
   top: 60%;
-  left: 25%;
+  left: 15%;
   transform: translate(0px, -50%);
 }
