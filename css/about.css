@@ -1,3 +1,12 @@
+@media screen and (max-width : 768px){
+  .icons{
+    width: 20%;
+  }
+}
+.container-fluid{
+	padding-right: 0!important;
+	padding-left: 0!important;
+}
 body{
   background-image: url("../ress/back5.jpg");
 	background-repeat: no-repeat;
@@ -15,12 +24,6 @@ height: 100%;
 .icons{
   margin:10px ;
 }
-@media screen and (max-width : 768px){
-  .icons{
-    width: 20%;
-  }
-}
-
 .icons:hover{
   box-shadow: 10px 10px 10px   transparent;
   transition: 0.2s ease-in;
@@ -65,7 +68,3 @@ height: 100%;
   background-color: #555; 
 }
 
-.container-fluid{
-	padding-right: 0!important;
-	padding-left: 0!important;
-}
