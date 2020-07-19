@@ -6,3 +6,13 @@ body{
 #globe{
   margin-right: 50px;
 }
+#video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 50%;
+  top: 60%;
+  left: 25%;
+  transform: translate(0px, -50%);
+}
