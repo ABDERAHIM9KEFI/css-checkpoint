@@ -3,7 +3,9 @@ body{
 	background-repeat: no-repeat;
   background-size: cover;
 }
-
+#globe{
+  margin-right: 50px;
+}
 #box-icons{
 display: flex;
 justify-content: center;

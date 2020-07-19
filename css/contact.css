@@ -22,6 +22,10 @@ body {
   background-size: cover;
 }
 
+#globe{
+  margin-right: 50px;
+}
+
 #rc{
   /*margin-left: 250px;*/
   margin-top: 150px;
