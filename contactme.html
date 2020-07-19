@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <link rel="icon" href="ress/letter-p.png" type="image/png" />
+    <title>My Contacts</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <!-- Menu -->
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light"
+          style="padding-left: 30%;"
+          style="margin-left: 0px;"
+        >
+          <a class="navbar-brand" href="#"
+            ><img width="80px" src="ress/logo.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projets.html">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactme.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+          <h1>Contact Me!</h1>
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">First Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Jonas">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Last Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Kahnwald">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out(bethi9a)</label>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlFile1"></label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </main>
+    <footer>
+      <div id="rc">
+        <div class="resou">
+          <div>
+            <center><img src="ress/linkedin.png" width="30%" />
+              <nav>
+                <button>
+                  <a href="https://www.linkedin.com">My Linkedin</a>
+                </button>
+              </nav>
+            </center>
+          </div>
+          <div>
+            <center>
+              <img src="ress/github.png" width="30%" />
+            <nav>
+              <button><a href="https://www.github.com">My GitHub</a></button>
+            </nav>
+            </center>
+          </div>
+          <div>
+            <center>
+              <img src="ress/skype.png" width="30%" /> <br />
+            <nav>
+              <button><a href="https://www.skype.com">My Skype</a></button>
+            </nav>
+            </center>
+          </div>
+        </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </footer>
+  </body>
+  <script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</html>

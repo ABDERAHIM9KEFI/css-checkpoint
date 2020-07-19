@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/projects.css" />
+    <link rel="icon" href="ress/letter-p.png" type="image/png" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <!-- Menu -->
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light"
+          style="padding-left: 30%;"
+          style="margin-left: 0px;"
+        >
+          <a class="navbar-brand" href="#"
+            ><img width="80px" src="ress/logo.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projets.html">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactme.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row projects">
+          <!-- cards -->
+          <div class="card" style="width: 20rem;" col-lg-3 col-md-6 col-sm-12>
+            <img src="ress/web.jfif" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">WEB Project</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="https://github.com" class="btn btn-primary">GITHUB</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;" col-lg-3 col-md-6 col-sm-12>
+            <img src="ress/mobile.jfif" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Mobile Project</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="https://github.com" class="btn btn-primary">GITHUB</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;" col-lg-3 col-md-6 col-sm-12>
+            <img src="ress/game.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Game Project</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="https://github.com" class="btn btn-primary">GITHUB</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;" col-lg-3 col-md-6 col-sm-12>
+            <img src="ress/AIproject.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">AI project</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="https://github.com" class="btn btn-primary">GITHUB</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;" col-lg-3 col-md-6 col-sm-12>
+            <img src="ress/data.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Big Data prject</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="https://github.com" class="btn btn-primary">GITHUB</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem;" col-lg-3 col-md-6 col-sm-12>
+            <img src="ress/coming.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Coming SOON</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="https://github.com" class="btn btn-primary">GITHUB</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </footer>
+  </body>
+  <script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</html>

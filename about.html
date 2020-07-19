@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <link rel="icon" href="ress/letter-p.png" type="image/png" />
+    <title>About ME!</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <!-- Menu -->
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light"
+          style="padding-left: 30%;"
+          style="margin-left: 0px;"
+        >
+          <a class="navbar-brand" href="#"
+            ><img width="80px" src="ress/logo.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projets.html">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactme.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <div id="aboutme">
+        <br>
+        <div>
+          <img
+            id="mee"
+            src="ress/me.jpg"
+            alt="Avatar"
+            class="avatar"
+            width="100%"
+          />
+        </div>
+        <br>
+        <div>
+          <strong>
+            <h2>Hello! I'M Abderahim Kefi</h2>
+          </strong>
+        </div>
+        <div><p>Listen to my Favorite Music</p></div>
+        <div>
+          <audio controls>
+            <source src="ress/Chlorine.m4a" type="audio/mpeg" />
+            Please Check the audio Extension
+          </audio>
+        </div>
+      </div>
+      <center>
+        <div style="display: block;"><h1>MY SKILLS</h1></div>
+      </center>
+      <div id="box-icons">
+        <img class="icons" src="ress/html5.svg" width="10%" />
+        <img class="icons" src="ress/css3.svg" width="10%" />
+        <img class="icons" src="ress/js.png" width="10%" />
+        <img class="icons" src="ress/bootstrap.svg" width=10%">
+        <img class="icons" src="ress/nodejs01.png" width="10%" />
+        <img class="icons" src="ress/Angular.png" width="10%" />
+        <img class="icons" src="ress/React.js.svg" width="10%" />
+        <img class="icons" src="ress/redux.png" width="10%" />
+      </div>
+    </main>
+    <footer>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </footer>
+  </body>
+  <script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</html>
